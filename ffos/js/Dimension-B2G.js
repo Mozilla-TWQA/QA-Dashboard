@@ -17,8 +17,8 @@ Dimension.addEdges(true, Mozilla, [
 		"edges": [
 			{"name": "Nominations", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?"]}}},
 			{"name": "Blockers", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2+"]}}},
-			{"name": "Bugs", "index": "bugs", "esfilter": {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2"]}}}},
-			{"name": "Features", "index": "bugs", "esfilter": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2"]}}},
+			{"name": "Bugs", "index": "bugs", "esfilter": {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+"]}}}},
+			{"name": "Features", "index": "bugs", "esfilter": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+"]}}},
 			{"name": "Regressions", "index": "bugs", "esfilter": {"term": {"keywords": "regression"}}},
                         {"name": "Verifyme", "index": "bugs", "esfilter": {"term": {"keywords": "verifyme"}}},
                         //{"name": "HasQAWhiteboard", "index": "bugs", "esfilter": {"exists": {"field":"cf_qa_whiteboard"}}},
@@ -40,7 +40,7 @@ Dimension.addEdges(true, Mozilla, [
 						{"not": {"term": {"keywords": "regression"}}}
 					]}},
 					{"name": "Blocker", "esfilter": {"and": [
-						{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2"]}},
+						{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2+"]}},
 						{"not": {"term": {"keywords": "regression"}}}
 					]}},
 					{"name": "Regression", "esfilter": {"term": {"keywords": "regression"}}}
@@ -400,10 +400,10 @@ Dimension.addEdges(true, Mozilla, [
                                                         {"CF":"Jan 21, 2014"} //?
                                                 ],
                                                 "style": {"color": "#1f77b4"},
-                                                "esfilter": {"terms": {"cf_feature_b2g": ["2.2"]}}
+                                                "esfilter": {"terms": {"cf_feature_b2g": ["2.2", "2.2?", "2.2+"]}}
                                         },
                                         {"name": "Other", "style": {"color": "#9467bd"}, "esfilter": {"and": [
-                                                {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2"]}}}
+                                                {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+"]}}}
                                         ]}}
                                 ]
                         },
