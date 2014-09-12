@@ -401,10 +401,10 @@ Dimension.addEdges(true, Mozilla, [
                                                 ],
                                                 "style": {"color": "#1f77b4"},
                                                 "esfilter": {"terms": {"cf_feature_b2g": ["2.2", "2.2?", "2.2+"]}}
-                                        },
-                                        {"name": "Other", "style": {"color": "#9467bd"}, "esfilter": {"and": [
-                                                {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+"]}}}
-                                        ]}}
+                                        }
+                                        //{"name": "Other", "style": {"color": "#9467bd"}, "esfilter": {"and": [
+                                        //        {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+"]}}}
+                                        //]}}
                                 ]
                         },
 
