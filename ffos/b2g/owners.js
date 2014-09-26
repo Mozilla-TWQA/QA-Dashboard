@@ -8,7 +8,7 @@ var OWNERS = {
   // "BetaTriage": "?", // Firefox OS
   "Storage": "Alison Shiue",
   "Bluetooth": "Alison Shiue", // Firefox OS
-  "Bluetooth PTS": "Eric Chang, Alison Shiue",
+  "Bluetooth PTS": "Eric Chang, Alison Shiue, Shing Lyu",
   // "Build Config": "Dylan Oliver", // Core
   // "Canvas: 2D": "Milan Sreckovic (Benoit Jacob, Jeff Muizelaar)",
   // "Canvas: WebGL": "Milan Sreckovic (Benoit Jacob, Jeff Gilbert)",
