@@ -7,6 +7,7 @@ var OWNERS = {
   // "AudioChannel": "Eric Chou", // Firefox OS
   // "BetaTriage": "?", // Firefox OS
   "Storage": "Alison Shiue",
+  "MTP/UMS": "Alison Shiue",
   "Bluetooth": "Alison Shiue", // Firefox OS
   "Bluetooth PTS": "Eric Chang, Alison Shiue, Shing Lyu",
   // "Build Config": "Dylan Oliver", // Core
