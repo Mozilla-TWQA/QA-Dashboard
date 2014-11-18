@@ -29,7 +29,7 @@ var OWNERS = {
   "Gaia::Camera": "",
   "Gaia::Clock": "Edward Chen",
   "Gaia::Contacts": "Johan Lorenzo",
-  "Gaia::Cost Control": "",
+  "Gaia::Cost Control": "Shing Lyu",
   "Gaia::Dialer": "Johan Lorenzo",
   "Gaia::E-Mail": "Edward Chen",
   "Gaia::Everything.me": "",
