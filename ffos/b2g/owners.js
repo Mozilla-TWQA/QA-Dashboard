@@ -8,8 +8,9 @@ var OWNERS = {
   // "BetaTriage": "?", // Firefox OS
   "Storage": "Alison Shiue",
   "MTP/UMS": "Alison Shiue",
-  "Bluetooth": "Alison Shiue", // Firefox OS
-  "Bluetooth PTS": "Eric Chang, Alison Shiue, Shing Lyu",
+  "Bluetooth": "Teri Wen", // Firefox OS
+  "Bluetooth PTS": "Eric Chang, Teri Wen",
+  "Text Selection": "*",
   // "Build Config": "Dylan Oliver", // Core
   // "Canvas: 2D": "Milan Sreckovic (Benoit Jacob, Jeff Muizelaar)",
   // "Canvas: WebGL": "Milan Sreckovic (Benoit Jacob, Jeff Gilbert)",
@@ -23,7 +24,7 @@ var OWNERS = {
   // "DOM: Device Interfaces": "Andrew Overholt (Johnny Stenback)", // DOM
   // "DOM: Events": "Andrew Overholt (Johnny Stenback)",
   "Gaia": "",
-  "Gaia::Bluetooth File Transfer": "Alison Shiue",
+  "Gaia::Bluetooth File Transfer": "Teri Wen",
   "Gaia::Browser": "",
   "Gaia::Build": "",
   "Gaia::Calendar": "Edward Chen",
