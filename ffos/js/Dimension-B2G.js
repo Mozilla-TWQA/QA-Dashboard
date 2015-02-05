@@ -47,7 +47,7 @@ Dimension.addEdges(true, Mozilla, [
 				]
 			},
 
-
+                        ESQuery.ComponentsQuery(),
 
 			/*{"name": "Component",
 				"field": "component",
@@ -59,102 +59,6 @@ Dimension.addEdges(true, Mozilla, [
 					return p.name;
 				}
 			},*/
-
-                        {"name": "Component","isFacet": true, "partitions":[
-                               {"name": "Bluetooth", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Bluetooth.*"}}
-                               ]}},
-                               {"name": "Gaia::Calendar", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Calendar.*"}}
-                               ]}},
-                               {"name": "Gaia::Camera", "esfilter":{ "or": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Camera.*"}}
-                               ]}},
-                               {"name": "Gaia::Clock", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Clock.*"}}
-                               ]}},
-                               {"name": "Gaia::Contacts", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Contacts.*"}}
-                               ]}},
-                               {"name": "Gaia::Cost Control", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Cost Control.*"}}
-                               ]}},
-                               {"name": "Gaia::Dialer", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Dialer.*"}}
-                               ]}},
-                               {"name": "Gaia::E-Mail", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::E-Mail.*"}}
-                               ]}},
-                               {"name": "Gaia::FTU", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::FTU.*"}}
-                               ]}},
-                               {"name": "Gaia::FMRadio", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::FMRadio.*"}}
-                               ]}},
-                               {"name": "Gaia::Gallery", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Gallery.*"}}
-                               ]}},
-                               {"name": "Gaia::Homescreen", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Homescreen.*"}}
-                               ]}},
-                               {"name": "Gaia::Keyboard", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Keyboard.*"}}
-                               ]}},
-                               {"name": "Gaia::Music", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Music.*"}}
-                               ]}},
-                               {"name": "Gaia::Ringtones", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Ringtones.*"}}
-                               ]}},
-                               {"name": "Gaia::Search", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Search.*"}}
-                               ]}},
-                               {"name": "Gaia::Settings", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Settings.*"}}
-                               ]}},
-                               {"name": "Gaia::SMS", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::SMS.*"}}
-                               ]}},
-                               {"name": "Gaia::System", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::System.*"}}
-                               ]}},
-                               {"name": "Gaia::System::Lockscreen", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::System::Lockscreen.*"}}
-                               ]}},
-                               {"name": "Gaia::System::Window Mgmt", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::System::Window Mgmt.*"}}
-                               ]}},
-                               {"name": "Gaia::Video", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Gaia::Video.*"}}
-                               ]}},
-                               {"name": "MTP/UMS", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=MTP/UMS.*"}}
-                               ]}},
-                               {"name": "NFC", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=NFC.*"}}
-                               ]}},
-                               {"name": "OTA", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=OTA.*"}}
-                               ]}},
-                               {"name": "Privacy Panel", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Privacy Panel.*"}}
-                               ]}},
-                               {"name": "RIL", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=RIL.*"}}
-                               ]}},
-                               {"name": "Storage", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Storage.*"}}
-                               ]}},
-                               {"name": "SystemPlatform", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=SystemPlatform.*"}}
-                               ]}},
-                               {"name": "Text Selection", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Text Selection.*"}}
-                               ]}},
-                               {"name": "Wifi", "esfilter":{ "and": [
-                                        {"regexp":{"cf_qa_whiteboard":".*COM=Wifi.*"}}
-                               ]}}
-		        ]},
 
 			{"name":"Team", "isFacet": true, "partitions":[
 				{"name":"Performance",

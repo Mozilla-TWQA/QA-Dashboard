@@ -14,7 +14,7 @@ importScript("Qb.js");
 
 importScript("../rest/ElasticSearch.js");
 importScript("../rest/Rest.js");
-
+importScript("../b2g/owners.js");
 
 
 var ESQuery = function(query){
@@ -22,6 +22,15 @@ var ESQuery = function(query){
 	this.compile();
 };
 
+ESQuery.ComponentsQuery = function(){
+
+      var data = {"name":"Component", "isFacet": true, "partitions": []};
+      for (var i = 0; i < Object.keys(OWNERS).length; i++) {
+         data.partitions.push({"name": Object.keys(OWNERS)[i], "esfilter":{ "and": [ {"regexp":{"cf_qa_whiteboard":".*COM=" + Object.keys(OWNERS)[i] + ".*"}}]}});
+      }
+
+     return data;
+};
 
 ESQuery.TrueFilter = {"match_all":{}};
 
