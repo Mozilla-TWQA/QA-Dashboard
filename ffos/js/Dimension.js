@@ -9,7 +9,7 @@ importScript("qb/ESQuery.js");
 var Dimension = {};
 
 
-var DEFAULT_QUERY_LIMIT = 20;
+var DEFAULT_QUERY_LIMIT = 100;
 
 Dimension.prototype = {
 	"getDomain": function (param) {
