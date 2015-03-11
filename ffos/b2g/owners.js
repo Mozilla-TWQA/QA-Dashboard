@@ -27,6 +27,7 @@ var OWNERS = {
   "Gaia::System::Lockscreen": "Gerry Chang",
   "Gaia::System::Window Mgmt": "",
   "Gaia::Video": "",
+  "MTBF-Nexus5L": "Alison Shiue",
   "MTP/UMS": "Alison Shiue",
   "NFC": "Alison Shiue", // Firefox OS
   "OTA": "Gerry Chang",
