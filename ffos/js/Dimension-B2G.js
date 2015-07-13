@@ -10,15 +10,15 @@ if (!Mozilla) var Mozilla = {"name": "Mozilla", "edges": []};
 Dimension.addEdges(true, Mozilla, [
 	{"name": "B2G",
 		"esfilter": {"or": [
-			{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "1.3?", "1.4?", "1.3t?", "1.5?", "2.0+", "2.0?", "2.1+", "2.1?", "2.2+", "2.2?", "3.0+", "3.0?", "backlog"]}},
+			{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "1.3?", "1.4?", "1.3t?", "1.5?", "2.0+", "2.0?", "2.1+", "2.1?", "2.2+", "2.2?", "2.5+", "2.5?", "3.0+", "3.0?", "backlog"]}},
 			{"term": {"product": "core"}},
 			{"term": {"product": "firefox os"}}
 		]},
 		"edges": [
-			{"name": "Nominations", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?", "3.0?"]}}},
-			{"name": "Blockers", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2+", "3.0+"]}}},
-			{"name": "Bugs", "index": "bugs", "esfilter": {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+", "3.0?", "3.0+"]}}}},
-			{"name": "Features", "index": "bugs", "esfilter": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+", "3.0?", "3.0+"]}}},
+			{"name": "Nominations", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?", "2.5?", "3.0?"]}}},
+			{"name": "Blockers", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2+", "2.5+", "3.0+"]}}},
+			{"name": "Bugs", "index": "bugs", "esfilter": {"not": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+", "2.5+", "2.5?", "3.0?", "3.0+"]}}}},
+			{"name": "Features", "index": "bugs", "esfilter": {"terms": {"cf_feature_b2g": ["2.0", "2.1", "2.2", "2.2?", "2.2+", "2.5+", "2.5?", "3.0?", "3.0+"]}}},
 			{"name": "Regressions", "index": "bugs", "esfilter": {"term": {"keywords": "regression"}}},
                         {"name": "Verifyme", "index": "bugs", "esfilter": {"term": {"keywords": "verifyme"}}},
                         //{"name": "HasQAWhiteboard", "index": "bugs", "esfilter": {"exists": {"field":"cf_qa_whiteboard"}}},
@@ -36,11 +36,11 @@ Dimension.addEdges(true, Mozilla, [
 			{"name": "State", "index": "bugs", "isFacet": true,
 				"partitions": [
 					{"name": "Nominated", "esfilter": {"and": [
-						{"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?", "3.0?"]}},
+						{"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?", "2.5?", "3.0?"]}},
 						{"not": {"term": {"keywords": "regression"}}}
 					]}},
 					{"name": "Blocker", "esfilter": {"and": [
-						{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2+", "3.0+"]}},
+						{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "2.0+", "2.1+", "2.2+", "2.5+", "3.0+"]}},
 						{"not": {"term": {"keywords": "regression"}}}
 					]}},
 					{"name": "Regression", "esfilter": {"term": {"keywords": "regression"}}}
@@ -361,6 +361,15 @@ Dimension.addEdges(true, Mozilla, [
                                                 "style": {"color": "#1f77b4"},
                                                 "esfilter": {"terms": {"cf_blocking_b2g": ["2.2+", "2.2?"]}}
                                         },
+                                        {"name": "2.5",
+                                                "dateMarks":[
+                                                        {"FC":"Nov 21, 2014"},//??
+                                                        {"SC":"Dec 13, 2014"},//??
+                                                        {"CF":"Jan 21, 2015"}//??
+                                                ],
+                                                "style": {"color": "#1f77b4"},
+                                                "esfilter": {"terms": {"cf_blocking_b2g": ["2.5+", "2.5?"]}}
+                                        },
                                         {"name": "3.0",
                                                 "dateMarks":[
                                                         {"FC":"Dec 31, 2015"},//??
@@ -376,7 +385,7 @@ Dimension.addEdges(true, Mozilla, [
                                         },
 					{"name": "Other", 
 						"style": {"color": "#9467bd"}, 
-						"esfilter": {"and": [{"not": {"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "1.3?", "1.4?", "1.3t?", "1.5?", "2.0+", "2.0?", "2.1+", "2.1?", "2.2+", "2.2?","3.0+","3.0?", "backlog"]}}}
+						"esfilter": {"and": [{"not": {"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "1.3?", "1.4?", "1.3t?", "1.5?", "2.0+", "2.0?", "2.1+", "2.1?", "2.2+", "2.2?", "2.5+", "2.5?", "3.0+","3.0?", "backlog"]}}}
 					]}}
 				]
 			},
@@ -410,6 +419,15 @@ Dimension.addEdges(true, Mozilla, [
                                                 ],
                                                 "style": {"color": "#1f77b4"},
                                                 "esfilter": {"terms": {"cf_feature_b2g": ["2.2", "2.2?", "2.2+"]}}
+                                        },
+                                        {"name": "2.5",
+                                                "dateMarks":[
+                                                        {"FC":"Nov 21, 2014"},//?
+                                                        {"SC":"Dec 13, 2014"},//?
+                                                        {"CF":"Jan 21, 2014"} //?
+                                                ],
+                                                "style": {"color": "#1f77b4"},
+                                                "esfilter": {"terms": {"cf_feature_b2g": ["2.5", "2.5?", "2.5+"]}}
                                         },
                                         {"name": "3.0",
                                                 "dateMarks":[
@@ -478,6 +496,15 @@ Dimension.addEdges(true, Mozilla, [
                                                 ],
                                                 "style": {"color": "#1f77b4"},
                                                 "esfilter": {"terms": {"cf_blocking_b2g": "2.2+"}}
+                                        },
+                                        {"name": "2.5",
+                                                "dateMarks":[
+                                                        {"FC":"Nov 21, 2014"},//?
+                                                        {"SC":"Dec 13, 2014"},//?
+                                                        {"CF":"Jan 21, 2015"}//?
+                                                ],
+                                                "style": {"color": "#1f77b4"},
+                                                "esfilter": {"terms": {"cf_blocking_b2g": "2.5+"}}
                                         },
                                         {"name": "3.0",
                                                 "dateMarks":[
