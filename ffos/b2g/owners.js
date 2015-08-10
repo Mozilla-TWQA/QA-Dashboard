@@ -31,6 +31,7 @@ var OWNERS = {
   "MTP/UMS": "Alison Shiue",
   "NFC": "Alison Shiue", // Firefox OS
   "OTA": "Gerry Chang",
+  "Private Browsing": "Alison Shiue",
   "Privacy Panel": "Gerry Chang",
   "RIL": "Eric Chang", // Firefox OS
   "Storage": "Alison Shiue",
