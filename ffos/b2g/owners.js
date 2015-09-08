@@ -29,6 +29,7 @@ var OWNERS = {
   "Gaia::Video": "",
   "MTBF-Nexus5L": "Alison Shiue",
   "MTP/UMS": "Alison Shiue",
+  "New Homescreen": "Teri Wen",
   "NFC": "Alison Shiue", // Firefox OS
   "OTA": "Gerry Chang",
   "Pin the Web": "Alison Shiue",
