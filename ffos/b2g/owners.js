@@ -39,5 +39,6 @@ var OWNERS = {
   "Storage": "Alison Shiue",
   "SystemPlatform": "Gerry Chang",
   "Text Selection": "*",
+  "Tracking Protection": "Alison Shiue",
   "Wifi": "Gerry Chang" // Firefox OS
 };
