@@ -4,8 +4,9 @@
 //Please keep the owner names consistent with phonebook names
 
 var OWNERS = {
-  "Bluetooth": "Teri Wen", // Firefox OS
-  "Bluetooth PTS": "Eric Chang, Teri Wen",
+  "Add-on": "Mike Lien",
+  "Bluetooth": "Teri Wen",
+  "Bluetooth PTS": "Teri Wen",
   "Gaia::Calendar": "Edward Chen",
   "Gaia::Camera": "",
   "Gaia::Clock": "Edward Chen",
@@ -30,15 +31,16 @@ var OWNERS = {
   "MTBF-Nexus5L": "Alison Shiue",
   "MTP/UMS": "Alison Shiue",
   "New Homescreen": "Teri Wen",
-  "NFC": "Alison Shiue", // Firefox OS
+  "NFC": "Alison Shiue",
   "OTA": "Gerry Chang",
   "Pin the Web": "Alison Shiue",
   "Private Browsing": "Alison Shiue",
   "Privacy Panel": "Gerry Chang",
-  "RIL": "Eric Chang", // Firefox OS
+  "RIL": "Eric Chang",
   "Storage": "Alison Shiue",
   "SystemPlatform": "Gerry Chang",
+  "Telemetry": "Iris Hsiao",
   "Text Selection": "*",
   "Tracking Protection": "Alison Shiue",
-  "Wifi": "Gerry Chang" // Firefox OS
+  "Wifi": "Gerry Chang"
 };
