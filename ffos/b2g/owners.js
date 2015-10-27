@@ -32,6 +32,7 @@ var OWNERS = {
   "MTP/UMS": "Alison Shiue",
   "New Homescreen": "Teri Wen",
   "NFC": "Alison Shiue",
+  "NSec": "Mike Lien",
   "OTA": "Gerry Chang",
   "Pin the Web": "Alison Shiue",
   "Private Browsing": "Alison Shiue",
