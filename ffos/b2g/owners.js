@@ -7,6 +7,7 @@ var OWNERS = {
   "Add-on": "Mike Lien",
   "Bluetooth": "Teri Wen",
   "Bluetooth PTS": "Teri Wen",
+  "Data Sync": "Cynthia Tang",
   "Gaia::Calendar": "Edward Chen",
   "Gaia::Camera": "",
   "Gaia::Clock": "Edward Chen",
