@@ -44,5 +44,6 @@ var OWNERS = {
   "Telemetry": "Iris Hsiao",
   "Text Selection": "*",
   "Tracking Protection": "Alison Shiue",
+  "TV Firefox Account": "Cynthia Tang",
   "Wifi": "Gerry Chang"
 };
