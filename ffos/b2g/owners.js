@@ -45,5 +45,6 @@ var OWNERS = {
   "Text Selection": "*",
   "Tracking Protection": "Alison Shiue",
   "TV Firefox Account": "Cynthia Tang",
+  "TV Seamless Experience": "Cynthia Tang",
   "Wifi": "Gerry Chang"
 };
