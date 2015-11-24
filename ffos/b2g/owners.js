@@ -44,7 +44,12 @@ var OWNERS = {
   "Telemetry": "Iris Hsiao",
   "Text Selection": "*",
   "Tracking Protection": "Alison Shiue",
+  "TV::App Usage Metrics": "Cynthia Tang",
+  "TV Browser": "Cynthia Tang",
   "TV Firefox Account": "Cynthia Tang",
+  "TV FTU": "Cynthia Tang",
+  "TV::Marketplace": "Cynthia Tang",
+  "TV::Remote Comtrol": "Cynthia Tang",
   "TV Seamless Experience": "Cynthia Tang",
   "Wifi": "Gerry Chang"
 };
