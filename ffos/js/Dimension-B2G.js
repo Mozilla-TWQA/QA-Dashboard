@@ -12,7 +12,8 @@ Dimension.addEdges(true, Mozilla, [
 		"esfilter": {"or": [
 			{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "1.3?", "1.4?", "1.3t?", "1.5?", "2.0+", "2.0?", "2.1+", "2.1?", "2.2+", "2.2?", "2.5+", "2.5?", "2.6+", "2.6?", "3.0+", "3.0?", "backlog"]}},
 			{"term": {"product": "core"}},
-			{"term": {"product": "firefox os"}}
+			{"term": {"product": "firefox os"}},
+			{"term": {"product": "marketplace"}},
 		]},
 		"edges": [
 			{"name": "Nominations", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?", "2.5?", "2.6?", "3.0?"]}}},
@@ -446,7 +447,7 @@ Dimension.addEdges(true, Mozilla, [
                                                 ],
                                                 "style": {"color": "#1f77b4"},
                                                 "esfilter": {"terms": {"cf_feature_b2g": ["2.6", "2.6?", "2.6+"]}}
-                                        }
+                                        },
                                         {"name": "3.0",
                                                 "dateMarks":[
                                                         {"FC":"Nov 21, 2015"},//?
