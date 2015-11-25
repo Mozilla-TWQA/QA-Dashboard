@@ -46,6 +46,7 @@ var OWNERS = {
   "Tracking Protection": "Alison Shiue",
   "TV::App Usage Metrics": "Cynthia Tang",
   "TV Browser": "Cynthia Tang",
+  "TV Data Sync": "Cynthia Tang",
   "TV Firefox Account": "Cynthia Tang",
   "TV FTU": "Cynthia Tang",
   "TV::Marketplace": "Cynthia Tang",
