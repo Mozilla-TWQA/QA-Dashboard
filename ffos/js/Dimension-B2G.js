@@ -12,8 +12,7 @@ Dimension.addEdges(true, Mozilla, [
 		"esfilter": {"or": [
 			{"terms": {"cf_blocking_b2g": ["1.3+", "1.4+", "1.3t+", "1.5+", "1.3?", "1.4?", "1.3t?", "1.5?", "2.0+", "2.0?", "2.1+", "2.1?", "2.2+", "2.2?", "2.5+", "2.5?", "2.6+", "2.6?", "3.0+", "3.0?", "backlog"]}},
 			{"term": {"product": "core"}},
-			{"term": {"product": "firefox os"}},
-			{"term": {"product": "Marketplace"}}
+			{"term": {"product": "firefox os"}}
 		]},
 		"edges": [
 			{"name": "Nominations", "index": "bugs", "esfilter": {"terms": {"cf_blocking_b2g": ["1.3?", "1.4?", "1.3t?", "1.5?", "2.0?", "2.1?", "2.2?", "2.5?", "2.6?", "3.0?"]}}},
