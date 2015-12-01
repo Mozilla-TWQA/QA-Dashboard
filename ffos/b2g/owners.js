@@ -51,7 +51,7 @@ var OWNERS = {
   "TV FTU": "Cynthia Tang",
   "TV::Marketplace": "Cynthia Tang",
   "TV::Presentation API": "Cynthia Tang",
-  "TV::Remote Comtrol": "Cynthia Tang",
+  "TV::Remote Control": "Cynthia Tang",
   "TV Seamless Experience": "Cynthia Tang",
   "Wifi": "Gerry Chang"
 };
